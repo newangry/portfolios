@@ -38,11 +38,11 @@ const Hero = ({selColor}) => {
         
         <div className="absolute link1">        
         <a
-          href="https://github.com" target="_blank">
+          href="https://github.com/star-dev325" target="_blank">
           <AiOutlineGithub />
         </a>
         <a
-          href="https://www.linkedin.com/" target="_blank">
+          href="https://www.linkedin.com/in/eric-diaz-c/" target="_blank">
           <ImLinkedin />
         </a>
         <a
