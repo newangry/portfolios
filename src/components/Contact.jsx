@@ -9,8 +9,9 @@ import { slideIn } from "../utils/motion";
 import { MdEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import "./Contact.scss";
+import { staggerContainer } from "../utils/motion";
 
-const Contact = () => {
+const Contact = ({theme, selColor}) => {
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -36,13 +37,13 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_6y5vft7',
-        'template_5g175sf',
+        '',
+        '',
         {
           from_name: form.name,
-          to_name: "Aarti Rathi",
+          to_name: "Strong Rabbit",
           from_email: form.email,
-          to_email: "aarti.rathi1710@gmail.com",
+          to_email: "strongrabbit@gmail.com",
           message: form.message,
         },
         'FMQ4a1hK5NSAkumfj',
@@ -68,6 +69,13 @@ const Contact = () => {
   };
 
   return (
+    <motion.section
+        variants={staggerContainer()}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, amount: 0.25 }}
+        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+      >
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col gap-10 overflow-hidden`}
     >
@@ -80,9 +88,10 @@ const Contact = () => {
 
       <motion.div whileInView={{ opacity: 1 , transform : 'none'}}
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75]  p-8 rounded-2xl'
+        style={{background: theme.contract.bg}}
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
+        <p className={styles.sectionSubText} >Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
@@ -98,7 +107,8 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className='bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium'
+              className={`py-3 px-3 placeholder:text-${theme.contract.input_color} text-white rounded-lg border-none font-medium`}
+              style={{background: theme.contract.input_bg}}
             />
           </label>
           <label className='flex flex-col'>
@@ -109,7 +119,9 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className='bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium'
+              className={`py-3 px-3 placeholder:text-${theme.contract.input_color} text-white rounded-lg border-none font-medium`}
+              style={{background: theme.contract.input_bg}}
+
             />
           </label>
           <label className='flex flex-col'>
@@ -120,11 +132,10 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className='bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium'
+              className={`py-3 px-3 placeholder:text-${theme.contract.input_color} text-white rounded-lg border-none font-medium`}
+              style={{background: theme.contract.input_bg}}
             />
-          </label>
-
-          
+          </label>          
           <button
             type='submit'
             className='bg-tertiary py-3 px-5 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
@@ -136,18 +147,19 @@ const Contact = () => {
         <div className="mt-5 contact__options">
           <article className="contact__option">
             <MdEmail />
-            <a href="mailto:aarti.rathi1710@gmail.com" target="_blank" className="blue-text-gradient">aarti.rathi1710@gmail.com</a>
+            <a href="mailto:strongrabbit@gmail.com" target="_blank" className={`${selColor == "blue"?'pink':'blue'}-text-gradient`}>strongrabbit@gmail.com</a>
           </article>
           <article className="contact__option">
             <BsWhatsapp />
-            <a href="https://api.whatsapp.com/send/?phone=917040031669&text&app_absent=0&lang=en" target="_blank" className="blue-text-gradient">
-              +91 7040031669
+            <a href="https://api.whatsapp.com/send/?phone=&text&app_absent=0&lang=en" target="_blank"  className={`${selColor == "blue"?'pink':'blue'}-text-gradient`}>
+              +12345678
             </a>
           </article>
         </div>
       </motion.div>
     </div>
+    </motion.section>
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+export default Contact;

@@ -5,10 +5,9 @@ import { styles } from "../styles";
 import { logo} from "../assets";
 import "./Navbar.scss";
 
-const Navbar = () => {
+const Navbar = ({theme}) => {
   const [active, setActive] = useState("");
   const [scrolled, setScrolled] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -18,9 +17,7 @@ const Navbar = () => {
         setScrolled(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -28,9 +25,9 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-3 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
-      }`}
+      } w-full flex items-center py-3 fixed top-0 z-20`}
+      style = {{background: scrolled?theme.bg:'transparent'}}
+
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -43,7 +40,7 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain logo' />
           <p className='sm:block text-white text-[18px] font-bold cursor-pointer flex '>
-          aarti.rathi
+          Rabbit
           </p>
         </Link>
 
@@ -52,7 +49,7 @@ const Navbar = () => {
               className={`top2 ${"text-secondary"
               } hover:text-white text-[15px] font-medium cursor-pointer`}
             >
-              <a href="https://drive.google.com/drive/folders/13YGuvdkXQdyFzfuJd3YdUaG99dhCPz22?pli=1" target="_blank">Resume</a>
+              <a href="" target="_blank">Resume</a>
           </div>
         </div>
       </div>

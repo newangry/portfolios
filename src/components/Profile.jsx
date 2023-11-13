@@ -6,12 +6,19 @@ import { textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import "./Profile.scss";
+import { staggerContainer } from "../utils/motion";
 
-const Profile = () => {
+const Profile = ({theme}) => {
   return (
-    <>
+    <motion.section
+        variants={staggerContainer()}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, amount: 0.25 }}
+        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+      >
       <motion.div id="tech" variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+        <h2 className={`${styles.sectionHeadText} text-center`} style={{color: theme.project.title}}>
           Profile Section
         </h2>
       </motion.div>
@@ -26,8 +33,8 @@ const Profile = () => {
       </div>
       ))}
     </div>
-    </>
+    </motion.section>
   );
 };
 
-export default SectionWrapper(Profile, "");
+export default Profile;

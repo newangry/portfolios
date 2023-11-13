@@ -3,15 +3,21 @@ import React from "react";
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
-import { textVariant } from "../utils/motion";
+import { staggerContainer, textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 
-const Tech = () => {
+const Tech = ({theme}) => {
   return (
-    <>
+    <motion.section
+        variants={staggerContainer()}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, amount: 0.25 }}
+        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+      >
       <motion.div id="tech" variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+        <h2 className={`${styles.sectionHeadText} text-center`} style={{color: theme.project.title}}>
           Tools
         </h2>
       </motion.div>
@@ -22,8 +28,8 @@ const Tech = () => {
         </div>
       ))}
     </div>
-    </>
+    </motion.section>
   );
 };
 
-export default SectionWrapper(Tech, "");
+export default Tech;

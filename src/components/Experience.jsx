@@ -6,18 +6,18 @@ import {
 import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
-
+import { staggerContainer } from "../utils/motion";
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
+const ExperienceCard = ({ experience, theme }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        background: theme.experience.item_bg,
+        color: theme.experience.date_color,
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
@@ -59,14 +59,20 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
-const Experience = () => {
+const Experience = ({theme}) => {
   return (
-    <>
+    <motion.section
+        variants={staggerContainer()}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, amount: 0.25 }}
+        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+      >
       <motion.div id="experience" variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
+        <p className={`${styles.sectionSubText} text-center`} style={{color: theme.experience.top_title}}>
           What I have done so far
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+        <h2 className={`${styles.sectionHeadText} text-center`} style={{color: theme.experience.title}}>
           Work Experience.
         </h2>
       </motion.div>
@@ -77,12 +83,13 @@ const Experience = () => {
             <ExperienceCard
               key={`experience-${index}`}
               experience={experience}
+              theme={theme}
             />
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </motion.section>
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default Experience;

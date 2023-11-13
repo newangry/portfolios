@@ -10,7 +10,7 @@ import {BiLinkAlt} from "react-icons/bi";
 import {aarti} from "../assets";
 import "./Hero.scss";
 
-const Hero = () => {
+const Hero = ({selColor}) => {
 
   const textRef=useRef();
   useEffect(()=>
@@ -28,11 +28,9 @@ const Hero = () => {
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
-
-
         <div className="head2">
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hii there, I'm <p className='name text-[#915EFF]'>Aarti Rathi</p>
+          <h1 className={`${styles.heroHeadText} `} style={{color: selColor == "blue"?'green':'white'}}>
+            Hi there, I'm <p className='name text-[#915EFF]'>Rabbit</p>
           </h1>
           <h3>
             <span ref={textRef} className={`${styles.heroSubText} mt-2 green-text-gradient`}></span>
@@ -40,19 +38,19 @@ const Hero = () => {
         
         <div className="absolute link1">        
         <a
-          href="https://github.com/shinchancode" target="_blank">
+          href="https://github.com" target="_blank">
           <AiOutlineGithub />
         </a>
         <a
-          href="https://www.linkedin.com/in/aarti-rathi-a6031814b/" target="_blank">
+          href="https://www.linkedin.com/" target="_blank">
           <ImLinkedin />
         </a>
         <a
-          href="https://www.instagram.com/aarti.rathiii" target="_blank">
+          href="https://www.instagram.com/" target="_blank">
           <AiOutlineInstagram />
         </a>
         <a
-          href="https://linktr.ee/rathi17" target="_blank">
+          href="https://linktr.ee/" target="_blank">
           <BiLinkAlt />
         </a>
 

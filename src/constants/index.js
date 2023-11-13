@@ -10,27 +10,27 @@ import {
 
   const profiles = [
     {
-      link: "https://auth.geeksforgeeks.org/user/aarti_rathi",
+      link: "https://",
       icon: "https://img.icons8.com/color/344/GeeksforGeeks.png",
     },
     {
-      link: "https://www.coursera.org/account/accomplishments/specialization/7V2SFZ9YWWRL",
+      link: "https://",
       icon: "https://img.icons8.com/fluency/344/google-cloud.png",
     },
     {
-      link: "https://www.qwiklabs.com/public_profiles/48dcd029-03b4-437b-9dd3-ef7d65958eb0",
+      link: "",
       icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/344/external-qwiklabs-provides-real-cloud-environments-that-help-developers-logo-color-tal-revivo.png",
     },
     {
-      link: "https://www.hackerrank.com/_shinchancode",
+      link: "",
       icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/344/external-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-logo-color-tal-revivo.png",
     },
     {
-      link:"https://dev.to/shinchancode",
+      link:"https://dev.to/",
       icon: hf,
     },
     {
-      link:"https://www.holopin.io/@shinchancode#badges",
+      link:"https://www.holopin.io/",
       icon: holopin,
     },
   ];
@@ -153,8 +153,8 @@ import {
         },
       ],
       image: crypto,
-      source_link: "https://github.com/shinchancode/Cryptography",
-      source_code_link: "https://github.com/shinchancode/Cryptography",
+      source_link: "https://github.com/",
+      source_code_link: "https://github.com/",
     },
     {
       name: "Snake Yaml",
@@ -175,8 +175,8 @@ import {
         },
       ],
       image: yml,
-      source_link: "https://github.com/shinchancode/Snake-Yaml-Project",
-      source_code_link: "https://github.com/shinchancode/Snake-Yaml-Project",
+      source_link: "https://github.com/",
+      source_code_link: "https://github.com/",
     },
     {
       name: "CRUD operations",
@@ -197,8 +197,8 @@ import {
         },
       ],
       image: crud,
-      source_link: "https://github.com/shinchancode/CRUD-Operation",
-      source_code_link: "https://github.com/shinchancode/CRUD-Operation",
+      source_link: "https://github.com/",
+      source_code_link: "https://github.com/",
     },
     {
       name: "Byte-Array-to-File",
@@ -219,8 +219,8 @@ import {
         },
       ],
       image: dwld,
-      source_link: "https://github.com/shinchancode/byte-array-to-file",
-      source_code_link: "https://github.com/shinchancode/byte-array-to-file",
+      source_link: "https://github.com/",
+      source_code_link: "https://github.com/",
     },
     {
       name: "Spring Boot One To Many",
@@ -241,8 +241,8 @@ import {
         },
       ],
       image: onetomany,
-      source_link: "https://github.com/shinchancode/oneTomany-springboot",
-      source_code_link: "https://github.com/shinchancode/oneTomany-springboot",
+      source_link: "https://github.com/",
+      source_code_link: "https://github.com/",
     },
     {
       name: "OOP Lab",
@@ -263,8 +263,8 @@ import {
         },
       ],
       image: oop,
-      source_link: "https://github.com/shinchancode/Object-Oriented-Programming-Lab",
-      source_code_link: "https://github.com/shinchancode/Object-Oriented-Programming-Lab",
+      source_link: "https://github.com/s",
+      source_code_link: "https://github.com/",
     },
   ];
   
@@ -288,8 +288,8 @@ import {
         },
       ],
       image: trie,
-      source_link: "https://github.com/shinchancode/Trie-Data-structure",
-      source_code_link: "https://github.com/shinchancode/Trie-Data-structure",
+      source_link: "https://github.com/",
+      source_code_link: "https://github.com/",
     },
     {
       name: "DSA Lab",
@@ -310,8 +310,8 @@ import {
         },
       ],
       image: ds,
-      source_link: "https://github.com/shinchancode/Data-Structure-Algorithms",
-      source_code_link: "https://github.com/shinchancode/Data-Structure-Algorithms/",
+      source_link: "https://github.com/",
+      source_code_link: "https://github.com/",
     },
     {
       name: "Computer Graphics Lab",
@@ -332,8 +332,8 @@ import {
         },
       ],
       image: cg,
-      source_link: "https://github.com/shinchancode/Computer-Graphics",
-      source_code_link: "https://github.com/shinchancode/Computer-Graphics",
+      source_link: "https://github.com/",
+      source_code_link: "https://github.com/",
     },
     
   ];
@@ -358,8 +358,8 @@ import {
         },
       ],
       image: port_3d,
-      source_link: "https://shinchancode.github.io/3d-react-portfolio/",
-      source_code_link: "https://github.com/shinchancode/3d-react-portfolio",
+      source_link: "https://",
+      source_code_link: "https://",
     },
     {
       name: "React portfolio",
@@ -380,8 +380,8 @@ import {
         },
       ],
       image: react1,
-      source_link: "https://shinchancode.github.io/React-Portfolio/",
-      source_code_link: "https://github.com/shinchancode/React-Portfolio",
+      source_link: "https://",
+      source_code_link: "https://",
     },
     {
       name: "30 Days of JavaScript",
@@ -402,8 +402,8 @@ import {
         },
       ],
       image: jsp,
-      source_link: "https://rathi-30-days-of-javascript.onrender.com/",
-      source_code_link: "https://github.com/shinchancode/30-Days-of-Javascript",
+      source_link: "https://",
+      source_code_link: "https://",
     },
     {
       name: "Chit Chat Application",
@@ -424,8 +424,8 @@ import {
         },
       ],
       image: chitchat,
-      source_link: "https://chit-chat-app.onrender.com/",
-      source_code_link: "https://github.com/shinchancode/Chit-Chat-Real_time_chat_app",
+      source_link: "https://",
+      source_code_link: "https://",
     },
     {
       name: "Notes Application",
@@ -446,8 +446,8 @@ import {
         },
       ],
       image: notes,
-      source_link: "https://shinchancode.github.io/Notes-App/",
-      source_code_link: "https://github.com/shinchancode/Notes-App",
+      source_link: "https://",
+      source_code_link: "https://",
     },
   ];
   
@@ -471,8 +471,8 @@ import {
         },
       ],
       image: be,
-      source_link: "https://drive.google.com/drive/folders/1LECu5ENk_zsowbPeRN_R1V8Rf2Gp7N6l",
-      source_code_link: "https://github.com/shinchancode/Final-Year-Project",
+      source_link: "https://",
+      source_code_link: "https://",
     },
 
     {
@@ -494,8 +494,8 @@ import {
         },
       ],
       image: sql,
-      source_link: "https://github.com/shinchancode/DBMS-SQL-Lab",
-      source_code_link: "https://github.com/shinchancode/DBMS-SQL-Lab",
+      source_link: "https://",
+      source_code_link: "https://",
     },
     {
       name: "SQL : Library Management System",
@@ -516,8 +516,8 @@ import {
         },
       ],
       image: mini,
-      source_link: "https://github.com/shinchancode/Mini-Project-SQL-LibraryManagement",
-      source_code_link: "https://github.com/shinchancode/Mini-Project-SQL-LibraryManagement",
+      source_link: "https://",
+      source_code_link: "https://",
     },
     {
       name: "Pyhton : Snake and Ladder",
@@ -538,8 +538,8 @@ import {
         },
       ],
       image: snl,
-      source_link: "https://github.com/shinchancode/MINI_PROJECT-Snake-and-Ladder",
-      source_code_link: "https://github.com/shinchancode/MINI_PROJECT-Snake-and-Ladder",
+      source_link: "https://",
+      source_code_link: "https://",
     },
     
   ];
@@ -572,7 +572,7 @@ import {
         "Collaborating with cross-functional technologies like spring boot, react etc. to integrate high-quality products.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
-      link: "https://github.com/codewithrathi",
+      link: "",
     },
     {
       title: "DSA Mentor",
@@ -585,7 +585,7 @@ import {
         "Teaching Assistant : Teaching Assistant for online batches of Data Structures, Algorithms, and Competitive programming with an average rating of 4.9*.",
         "Responsible for reviewing and writing articles based on Data Structures and Algorithms.",
       ],
-      link: "https://drive.google.com/drive/folders/1efpnfKpRTvtujtSgHwRIJdrMFiWrBFHt",
+      link: "https:/",
     },
     {
       title: "Technical Content Writer",
@@ -599,7 +599,7 @@ import {
         "Attracted over 10000+ visitors to the company website with powerful educational content.",
         "Wrote 100+ articles and improved 300+ articles on topics like Data Structures, Algorithms, Mathematics and related engineering topics",
       ],
-      link: "https://auth.geeksforgeeks.org/user/_shinchancode",
+      link: "https://e",
     },
     {
       title: "Google Cloud Training",
@@ -614,7 +614,7 @@ import {
         "Got introduced to Computing, Application Development, Big Data and Machine Learning using Google Cloud's on training platform Qwiklabs",
         "Additional self-paced labs were provided to practice on Qwiklabs a platform by Google",
       ],
-      link: "https://www.cloudskillsboost.google/public_profiles/48dcd029-03b4-437b-9dd3-ef7d65958eb0",
+      link: "https://0",
     },
     {
       title: "Hacktoberfest",
@@ -627,7 +627,7 @@ import {
         "Hacktoberfest is an annual worldwide event held during the month of October. The event encourages open source developers to contribute to repositories through pull requests (PR).",
         "GitHub hosts many open source repositories that contribute to this event.",
       ],
-      link: "https://dev.to/shinchancode",
+      link: "",
     },
   ];
   
