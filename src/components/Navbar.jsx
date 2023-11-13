@@ -40,7 +40,7 @@ const Navbar = ({theme}) => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain logo' />
           <p className='sm:block text-white text-[18px] font-bold cursor-pointer flex '>
-          Rabbit
+          Eric Chen
           </p>
         </Link>
 

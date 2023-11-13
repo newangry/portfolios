@@ -30,7 +30,7 @@ const Hero = ({selColor}) => {
         </div>
         <div className="head2">
           <h1 className={`${styles.heroHeadText} `} style={{color: selColor == "blue"?'green':'white'}}>
-            Hi there, I'm <p className='name text-[#915EFF]'>Rabbit</p>
+            Hi there, I'm <p className='name text-[#915EFF]'>Eric Chen</p>
           </h1>
           <h3>
             <span ref={textRef} className={`${styles.heroSubText} mt-2 green-text-gradient`}></span>
